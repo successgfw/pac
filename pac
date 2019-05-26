@@ -13,6 +13,7 @@ var FindProxyForURL = function(init, profiles) {
         "use strict";
         if (/(?:^|\.)github\.com$/.test(host)) return "+Proxy";
         if (/(?:^|\.)mozilla\.org$/.test(host)) return "+Proxy";
+        if (/(?:^|\.)php\.net$/.test(host)) return "+Proxy";
         // cloud service cldup.com on wordpress
         if (/(?:^|\.)cldup\.com$/.test(host)) return "+Proxy";
         return "+GFWList";
