@@ -15,6 +15,7 @@ var FindProxyForUrl = function(init, profiles) {
     },
     "+GFWList": function(url, host, scheme) {
         "use strict";
+        return "DERECT";
     },
     "+Proxy": function(url, host, scheme) {
         "use strict";
