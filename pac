@@ -11,6 +11,7 @@ var FindProxyForURL = function(init, profiles) {
 }("+auto switch", {
     "+auto switch": function(url, host, scheme) {
         "use strict";
+        if (/(?:^|\.)github\.com$/.test(host)) return "+Proxy";
         return "+GFWList";
     },
     "+GFWList": function(url, host, scheme) {
