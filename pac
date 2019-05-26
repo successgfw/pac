@@ -1,4 +1,4 @@
-var FindProxyForUrl = function(init, profiles) {
+var FindProxyForURL = function(init, profiles) {
     return function(url, host) {
         "use strict";
         var result = init, scheme = url.substr(0, url.indexOf(":"));
