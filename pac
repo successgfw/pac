@@ -14,6 +14,8 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)github\.com$/.test(host)) return "+Proxy";
         if (/(?:^|\.)mozilla\.org$/.test(host)) return "+Proxy";
         if (/(?:^|\.)php\.net$/.test(host)) return "+Proxy";
+        // rxvt-unicode software homepage
+        if (/(?:^|\.)schmorp\.de$/.test(host)) return "+Proxy";
         // cloud service cldup.com on wordpress
         if (/(?:^|\.)cldup\.com$/.test(host)) return "+Proxy";
         return "+GFWList";
