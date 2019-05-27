@@ -18,6 +18,11 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)schmorp\.de$/.test(host)) return "+Proxy";
         // cloud service cldup.com on wordpress
         if (/(?:^|\.)cldup\.com$/.test(host)) return "+Proxy";
+
+        // YunFan CDN
+        if (/(?:^|\.)yfp2p\.com$/.test(host)) return "DIRECT";
+        if (/(?:^|\.)yfp2p\.net$/.test(host)) return "DIRECT";
+
         return "+GFWList";
     },
     "+GFWList": function(url, host, scheme) {
