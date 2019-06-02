@@ -23,6 +23,8 @@ var FindProxyForURL = function(init, profiles) {
         // trello
         if (/(?:^|\.)trello\.com$/.test(host)) return "+Proxy";
         if (/(?:^|\.)trellocdn\.com$/.test(host)) return "+Proxy";
+        // tutanota email
+        if (/(?:^|\.)tutanota\.com$/.test(host)) return "+Proxy";
 
         // YunFan CDN
         if (/(?:^|\.)yfp2p\.com$/.test(host)) return "DIRECT";
