@@ -27,8 +27,6 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)tutanota\.com$/.test(host)) return "+Proxy";
         // namesilo
         if (/(?:^|\.)namesilo\.com$/.test(host)) return "+Proxy";
-        // sandstalk.com
-        if (/(?:^|\.)sandstalk\.com$/.test(host)) return "+Proxy";
 
         // YunFan CDN
         if (/(?:^|\.)yfp2p\.com$/.test(host)) return "DIRECT";
