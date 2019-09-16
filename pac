@@ -29,6 +29,8 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)namesilo\.com$/.test(host)) return "+Proxy";
         // elasticsearch official site
         if (/(?:^|\.)elastic\.co$/.test(host)) return "+Proxy";
+        // whatsapp
+        if (/(?:^|\.)whatsapp\.com$/.test(host)) return "+Proxy";
 
         // YunFan CDN
         if (/(?:^|\.)yfp2p\.com$/.test(host)) return "DIRECT";
